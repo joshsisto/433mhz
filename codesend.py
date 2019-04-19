@@ -15,7 +15,7 @@ codes = {
     'bright_plus': '16658444',
     'bright_minus': '16658447',
     'white': '16658446',
-    'red': '16658447',
+    'red': '16658448',
     'green': '16658449',
     'purple': '16658450',
     'yellow': '16658451',
@@ -29,5 +29,12 @@ def remote_code(code):
     time.sleep(.25)
 
 
-remote_code(codes["power"])
-
+while True:
+    remote_code(codes["power"])
+    remote_code(codes["red"])
+    remote_code(codes["yellow"])
+    remote_code(codes["green"])
+    remote_code(codes["blue"])
+    remote_code(codes["purple"])
+    remote_code(codes["pink"])
+    remote_code(codes["white"])
